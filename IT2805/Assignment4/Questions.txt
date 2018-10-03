@@ -1,0 +1,10 @@
+1.	Why do mobile phones usually ignore auto play on video elements?
+This is intentionally added by the OS developers to prevent unwanted use of mobile bandwidth. 
+
+2.	What will the CSS snippet at the end of this section do if the visitor is browsing on a
+device with 320 x 568 resolution?
+Nothing will happen (the display: none; will not trigger) because the resolution is below the min-device-width.
+
+3.	Mention some of the advantages of having a single responsive website instead of dedicated versions like m.til.no for mobile and til.no for desktop?
+Using a single website is easier to administer and with lower cost. By having only one URL mobile users also don't 
+have to wait to be redirected to the mobile site which takes time, especially on slower connections.   

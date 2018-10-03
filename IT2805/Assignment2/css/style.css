@@ -1,0 +1,16 @@
+h1{
+	font-family:"Papyrus", serif;
+}
+
+p{
+	font-family:"verdana", serif;
+}
+
+body{
+	background-color: 9A9999;
+}
+
+img{
+	max-width:150px;
+	border:2px solid #021a40;
+}
