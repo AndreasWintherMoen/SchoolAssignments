@@ -1,0 +1,12 @@
+1) Alan Turing regnes som grunnleggeren av teoretisk datateknologi og 
+kunstig intelligens, og er også kjent for konstruere en maskin som kunne
+finne kodenøkler for den tyske krypteringsmaskinen Enigma under andre 
+verdenskrig.
+
+2) Mindre kort som kobles inn i hovedkortet kalles datterkort og kobles 
+inn for å få ekstra funksjonalitet
+
+3) CPU - Central Processing Unit
+
+4) RAM kalles "random" fordi du kan få tilgang til spesifikke 
+minneadresser uten å gå gjennom alle minneadressene fra start til slutt.

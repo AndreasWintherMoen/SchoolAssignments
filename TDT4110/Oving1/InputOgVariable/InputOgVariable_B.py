@@ -1,0 +1,6 @@
+navn = input("Navn? ")
+print("Hei, ", navn)
+favorittfag = input("Favorittfag? ")
+print(favorittfag, " - interessant!")
+print("Ha en fin dag, ", navn)
+print("- og lykke til med ", favorittfag)
