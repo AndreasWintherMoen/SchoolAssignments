@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IT2805 assignment 5: JavaScript introduction</title>
+
+    <style>
+      .box{
+        /* Sets the size and position of each box */
+        width: 200px;
+        height: 200px;
+        background-color: #185D8B;
+        margin: 10px;
+
+        /* Sets the font within each box*/
+        color: #fff;
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+        line-height: 200px;
+        font-size: 100px;
+      }
+
+      .buttons{
+        width: 200px;
+        margin: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1 id='title'></h1>
+
+    <h2>Part 5</h2>
+    <div class='buttons'>
+      <button onclick="changeDisplay();">Display: none </button>
+      <button onclick="changeVisibility();">Visibility: hidden</button>
+      <button onclick="reset();">Reset</button>
+    </div>
+    <div class='box' id='magic'> 1 </div>
+    <div class='box'> 2 </div>
+	
+    <h2>Part 6</h2>
+    <button onclick="addTechnologies();">Make list</button> 
+    <!-- Could also do onload="addTechnologies();" in the body tag instead of a button to make the list when the page
+    loads. The assignment didn't specify, so I did it like this. -->
+    <ul id='tech'>
+    </ul>
+	<script src="script.js"></script>
+	<!-- A script MAY be put anywhere in the HTML document (anywhere inside head or body). However, it is generally
+	considered good practice to put it at the end of the body. This is because the browser loads the HTML line by line
+	from top to bottom, and loading the visuals before the script will make the page appear as more responsive. -->
+  </body>
+</html>
