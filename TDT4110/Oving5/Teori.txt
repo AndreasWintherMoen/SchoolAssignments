@@ -1,0 +1,27 @@
+a) Hvor mange ulike verdier kan representeres med 4 bytes?
+	2^(8 * 4) = 4,294,967,296
+
+
+b) Hvor mange bytes trenger man for å representere et fullt HD bilde (1920x1080) i sort/hvitt?
+	Antar en bit per piksel. 1920 * 1080 = 2,073,600. 
+	Tilsvarer 2,073,600 / 8 = 259,200 bytes ~= 259 kB
+
+
+c) Hva er en DAC?  
+	Digital to Analog Converter. Konverterer et digitalt lydsignal til analogt (fra bits og bytes til sinusboelge).
+
+
+d) Hva er 18 i totallssystemet? Hva er 18 i 16-tallssystemet? 
+	10010
+
+
+e) ’OSTE’ kodet i ASCII blir: ’0100 1111 0101 0011 0101 0100 0100 0101’, hva blir ’POP’ kodet i ASCII?
+	0101 0000 0100 1111 0101 0000
+
+
+f) Hva er en piksel, og hva er dens funksjon i datamaskinens sammenheng?
+	En piksel er et punkt paa skjermen som har en gitt farge. Totalt utgjoer alle pikslene et bilde som vises paa skjermen til brukeren.
+
+
+g) Hva er forskjellen på analog og digital lyd? 
+	Analog lyd er en sinuskurve. Digital lyd er en forsoekt representasjon av sinuskurven ved bruk av distinktive posijoner. 
