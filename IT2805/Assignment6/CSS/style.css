@@ -1,0 +1,44 @@
+.submitForm 
+{
+	width: 250px;
+	border-radius: 25px;
+	background-color: #aaaadd;
+	padding: 10px 20px;
+	font-family: Helvetica, Sans-Serif;
+}
+
+.submitForm div
+{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+input[type=text],[type=email],[type=date],[type=number]
+{
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+	padding: 6px 10px;
+	box-sizing: border-box;
+}
+
+input[type=submit]
+{
+	width: 100%;
+	background-color: #4545c0;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	margin-top: 22px;
+	padding: 8px;
+}
+
+input[type=submit]:hover
+{
+	background-color: #5555d0;
+}
+
+input[type=submit]:active
+{
+	background-color: #2525a0;
+}

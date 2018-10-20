@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tax form</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="JavaScript/script.js"></script>
+    </head>
+    <body>
+        <div class="submitForm">
+        	<form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="get">
+
+    			<div class="realName">
+                    <label for="name">Real name</label>
+                    <input type="text" name="name" placeholder="Your actual name" required>
+                </div>
+                
+                <!-- I couldn't find a way to require gender input without using JavaScript. Is this possible when radio inputs are used? -->
+                <div class="gender"> 
+        			<input type="radio" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="Female">
+                    <label for="Female">Female</label>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Your email address" required>
+                </div>
+
+    			<div class="birthdate">
+                    Birthdate <input type="date" name="birthdate" max="1989-01-01" required>
+                </div>
+
+    			<div class="heroName">
+                    <label for="hero">Real name</label>
+                    <input type="text" name="hero" placeholder="Your hero name" required>
+                </div>
+
+    			<div class="spandex">
+                    <input type="checkbox" name="spandex">
+                    <label for="checkbox">Do you wear spandex?</label>
+                </div>
+
+    			<div class="strength">
+                    <label for="strength">Strength</label>
+                    <input type="number" name ="strength" min="1" max="10" placeholder="1-10" required>
+                </div>
+
+    			<div class="speed">
+                    <label for="speed">Speed</label>
+                    <input type="number" name ="speed" min="1" max="10" placeholder="1-10" required>
+                </div>
+
+    			<div class="intelligence">
+                    <label for="intelligence">Intelligence</label>
+                    <input type="number" name ="intelligence" min="1" max="10" placeholder="1-10" required>
+                </div>
+
+                <div class="income">
+                    <label for="income">Income</label>
+                    <input type="number" name ="income" min="0" id="incomeInput" placeholder="Total income" required 
+                    onChange="calculateTax(incomeInput.value, wealthInput.value)">
+                </div>
+
+                <div class="wealth">
+                    <label for="wealth">Wealth</label>
+                    <input type="number" name ="wealth" min="0" id="wealthInput" placeholder="Total wealth" required 
+                    onChange="calculateTax(incomeInput.value, wealthInput.value)">
+                </div>
+
+                <div class="tax">
+                    <label for="tax">Tax</label>
+                    <input type="number" name ="tax" min="0" id="taxInput" placeholder="Total wealth" disabled>
+                </div>
+
+    			<div class="submitButton">
+                    <input type="submit">
+                </div>
+
+        	</form>
+        </div>
+    </body>
+</html>

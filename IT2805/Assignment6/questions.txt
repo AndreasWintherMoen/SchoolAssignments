@@ -1,0 +1,15 @@
+1. Why does the following expression 0.1 + 0.2 === 0.3 evaluate to false in Javascript?
+	JavaScript uses 64 floating-point numbers to represent numbers. Due to the imperfect precision of such numbers (called floating-point precision error), the sum of two numbers may be slightly wrong. For example, 0.1 + 0.2 may be represented internally in the computer as 0.299999999. Therefore, when comparing floating-point numbers one should accept values within a small tolerance. To give the desired result the expression could be written as such: Math.abs((0.1 + 0.2) - 0.3) < 0.00001.
+
+2. What does the method attribute on a form element decide?
+	The method attribute tells the browser which HTTP method it should use to submit the form. The method value can either be get or post. Get will append the form data to the action URI of the form which is then sent to the server. Get is used to request data from a specified source when no personal data is being submitted by the user. Post includes the form data in the body and sends it to the server. Since this information isn't cached and doesn't show up in the URL field of the browser, sensitive information such as passwords are sent using the post attribute. 
+
+3. Explain why the form fields appear in the URL when the method on form element is changed to GET ?
+	The action specifies the URI the browser will open when a form is submitted. If the method is set to GET, the URI will append all the form data. This is used to request a specific URI based on the user's input to the form data. 
+
+4. Why is it considered bad practice to only validate form input with HTML5 and/or Javascript?
+	HTML validation is more performant than JavaScript because it doesn't require an external script. However, the HTML validation offers limited features. With JavaScript you have access to more features, but it is less performant. A problem with using JavaScript validation is that the user may disable JavaScript entirely, thus disabling the validation entirely. By using server-side validation instead, you send the information to a server which is able to validate the form no matter if JavaScript is turned off in the user's browser or not. 
+
+
+5. When is it appropriate to use textarea over input ?
+	When the user's input text is expected to be long. Textarea allows for multi-line text. 
