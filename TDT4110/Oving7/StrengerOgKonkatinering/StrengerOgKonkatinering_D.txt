@@ -1,0 +1,3 @@
+Skriver ut: bobbob
+
+func1 returnerer en ny string bestående av fjerde bokstav fra hvert string element i lista. func2 returnerer en string bestående av to kopier av en gitt string.
