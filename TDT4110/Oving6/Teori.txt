@@ -1,0 +1,21 @@
+1) 
+	HTTP, SMTP, og FTP finnes i application layer i TCP/IP-modellen.
+
+2) 
+	Paritet som feildeteksjonsmetode fungerer ved at en ekstra bit brukes for å verifisere beskjeden. Det er altså 50% sannsynlighet for at en feil faktisk oppdages. 
+
+3) 
+	Circuit switching benytter en konstant datastrøm mellom to enheter. Packet switching gjør om data som skal sendes til mindre pakker som sendes hver for seg. 
+
+4) 
+	Oppgaven til en ruter er å sende informasjonspakker mellom to datamaskiner.
+
+5) 
+	En protokoll er et standardisert sett av regler som angir hvordan dataoverføring og kommunikasjon skal fungere på et nettverk. 
+
+6) 
+	- Application layer (HTTP, SMTP, ...) 
+	- Transport layer (TCP/UDP)
+	- Network layer (IP)
+	- Data link layer (Ethernet, WiFi)
+	- Physical layer (802.11ac, ...)

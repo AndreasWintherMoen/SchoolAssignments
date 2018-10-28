@@ -12,7 +12,7 @@ c) Hva er en DAC?
 
 
 d) Hva er 18 i totallssystemet? Hva er 18 i 16-tallssystemet? 
-	10010
+	12
 
 
 e) ’OSTE’ kodet i ASCII blir: ’0100 1111 0101 0011 0101 0100 0100 0101’, hva blir ’POP’ kodet i ASCII?
