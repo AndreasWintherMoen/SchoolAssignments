@@ -1,0 +1,3 @@
+Kodesnutt 2 er riktig, selv om den er skrevet litt rart. Går fra 4. siste bokstav til bokstav nr 100. Ettersom den angitte strengen er mindre enn 100 vil den printe de 4 siste bokstavene.
+1 fungerer ikke fordi du kan ikke formattere strenger slik. [] er kun for aksessering (get). Kunne f.eks. gjort streng.replace("Cake", "Cupcake")
+3 gjør ingenting... Forstår ikke helt hva denne har tenkt å gjøre, men det er i hvert fall ikke spesifisert hvilke bokstaver som skal tildeles ([] er tom).
