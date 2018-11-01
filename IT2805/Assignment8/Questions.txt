@@ -1,0 +1,20 @@
+1.
+	getContext("webgl") will get a three-dimensional context. 
+
+
+2. 
+	By using the arc function: context.arc(x, y, radius, startAngle, endAngle [, anticlockwise]);
+	Code:
+	context.arc(x, y, radius, 0, 2 * Math.PI);
+	context.fillStyle = "blue";
+	context.fill();
+
+3. 
+	const countries = ['Norway', 'Sweden', 'Denmark', 'New Zealand'];
+
+	function startWithN(country)
+	{
+		return (country.startsWAith("N"));
+	}
+
+	let countriesStartingWithN = countries.filter(startWithN);

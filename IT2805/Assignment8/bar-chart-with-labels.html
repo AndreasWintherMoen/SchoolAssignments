@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tax forms: Bar chart with lines</title>
+    <meta charset="UTF-8">
+    <script src="taxForms.js"></script>
+  </head>
+  <body>
+
+    <canvas id="chart" width="700" height="550"></canvas>
+    
+    
+
+    <script>
+      const canvas = document.getElementById('chart');
+      const context = canvas.getContext('2d');
+
+      /* Draw a line from (fromX, fromY) to (toX, toY) */
+      function drawLine(fromX, fromY, toX, toY) {
+        context.beginPath();
+        context.strokeStyle = "black";
+        context.moveTo(toX, toY);
+        context.lineTo(fromX, fromY);
+        context.stroke();
+      }
+
+      /* Draw a text (string) on (x, y) */
+      function drawText(text, x, y) {
+        context.fillStyle = 'black';
+        context.fillText(text, x, y);
+      }
+
+      /* Draw a text and with a line to its right */
+      function drawLineWithText(text, fromX, fromY, toX, toY) {
+        drawText(text, fromX - 50, fromY + 10);
+        drawLine(fromX, fromY, toX, toY);
+      }
+
+      function drawRectangle(color, x, y, width, height)
+      {
+        context.beginPath();
+        context.strokeStyle = color;
+        context.moveTo(x, y);
+        context.lineTo(x + width, y);
+        context.lineTo(x + width, y + height);
+        context.lineTo(x, y + height);
+        context.lineTo(x, y);
+        context.fillStyle = color;
+        context.fillRect(x, y, width, height);
+        context.stroke();
+      }
+
+      function drawLabels(color, text, x, y, rectangleWidth, rectangleHeight, textPadding)
+      {
+        drawRectangle(color, x, y, rectangleWidth, rectangleHeight);
+        drawText(text, x + rectangleWidth + textPadding, y + (rectangleHeight / 2));
+      }
+
+
+      // Code starts here
+      drawLabels("red", "Income", 570, 50, 50, 20, 10);
+      drawLabels("blue", "Wealth", 570, 80, 50, 20, 10);
+      
+      for (let i = 0; i < 10; i++)
+      {
+        let amount = 1000000 - (i * 100000);
+        drawLineWithText(amount.toString(), 50, 50 * (i + 1), 550, 50 * (i + 1));
+      }
+    </script>
+  </body>
+</html>
