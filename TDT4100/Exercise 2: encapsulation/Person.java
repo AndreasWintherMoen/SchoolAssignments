@@ -63,7 +63,8 @@ public class Person
 
 	public void setEmail(String email) throws IllegalArgumentException
 	{
-		if (_TEST_isValidEmail(email) == false)
+		
+		if (isValidEmail(email) == false)
 		{
 			throw new IllegalArgumentException();
 		}
@@ -220,61 +221,6 @@ public class Person
 	}
 	
 	
-	// Implemented this version of email validation because the first checked if the names in the email are the same as
-	// the names of the Person, which apparently gives errors in JUnit. For some reason, I still get one error on 
-	// the email espen.askeladd@eventyr.no from the JUnit test which apparently is supposed to be invalid?
-	private boolean _TEST_isValidEmail(String email)
-	{
-		return (validateEmailSymbolOrder(email) && validateEmailCountryCode(email));
-	}
-	
-	private boolean validateEmailSymbolOrder(String email)
-	{
-		// A valid email must consist of first name and last name, separated by "."
-		// Then 
-		char[] symbolOrder = { '.', '@', '.' };
-		int foundSymbols = 0;
-		
-		int currentIndex = 0;
-		for(int i = 0; i < symbolOrder.length; i++)
-		{
-			while (currentIndex < email.length())
-			{
-				char c = email.charAt(currentIndex);
-				
-				currentIndex++;
-				
-				if (c == symbolOrder[i])
-				{
-					// Found symbol, so jump to next symbol
-					foundSymbols++;
-					break;
-				}
-				
-				// If the character is not a letter or symbol (it is a symbol), but not the correct symbol, return false
-				if (Character.isLetter(c) == false && Character.isDigit(c) == false)
-				{
-					return false;
-				}
-			}
-			
-		}
-		
-		// If we have found all symbols (in the correct order), return true
-		return (foundSymbols == symbolOrder.length);
-	}
-	
-	private boolean validateEmailCountryCode(String email)
-	{
-		String countryCode = email.substring(email.length() - 2);
-		countryCode = countryCode.toLowerCase();
-		// How am I supposed to do this?
-		return (Arrays.stream(VALID_EMAIL_COUNTRY_CODES).anyMatch(countryCode::equals));
-	}
-	
-	
-	// I made this first, but it gives errors in JUnit because I check that the email name correlates with the name of
-	// the Person. 
 	private boolean isValidEmail(String email)
 	{
 		int emailLength = email.length();
@@ -295,12 +241,12 @@ public class Person
 		}
 		
 		// Must contain first and last name
-		if (email.contains(getFirstName()) == false)
+		if (email.contains(getFirstName().toLowerCase()) == false)
 		{
 			System.out.println("email does not contain first name: " + getFirstName() + " in email " + email);
 			return false;
 		}
-		if (email.contains(getLastName()) == false)
+		if (email.contains(getLastName().toLowerCase()) == false)
 		{
 			System.out.println("email does not contain last name: " + getLastName() + " in email " + email);
 			return false;
