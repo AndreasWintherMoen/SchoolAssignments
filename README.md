@@ -1,3 +1,3 @@
 # SchoolAssignments
 
-This is merely a repo of my school assignments. I have no idea why you'd be interesting in these files, but if you are then be my guest. 
+This is merely a repo of my school assignments. Feel free to use it as "inspiration" for your own assignments, but remember that you're responsible for your own learning, and that simply copying an exercise will teach you nothing. 
