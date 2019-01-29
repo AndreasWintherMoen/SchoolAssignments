@@ -11,7 +11,6 @@ public class Person
 	private char gender;
 	private String ssn;
 
-	// This looks dumb. I'm sorry
 	private static final String[] VALID_EMAIL_COUNTRY_CODES = {"ad", "ae", "af", "ag", "ai", "al", "am", "ao", "aq", 
 			"ar", "as", "at", "au", "aw", "ax", "az", "ba", "bb", "bd", "be", "bf", "bg", "bh", "bi", "bj", "bl", "bm", 
 			"bn", "bo", "bq", "br", "bs", "bt", "bv", "bw", "by", "bz", "ca", "cc", "cd", "cf", "cg", "ch", "ci", "ck", 
@@ -28,13 +27,6 @@ public class Person
 			"tt", "tv", "tw", "tz", "ua", "ug", "um", "us", "uy", "uz", "va", "vc", "ve", "vg", "vi", "vn", "vu", "wf", 
 			"ws", "ye", "yt", "za", "zm", "zw"}; 
 	
-	
-	
-	
-	public Person()
-	{
-
-	}
 
 	public void setName(String name) throws IllegalArgumentException
 	{
@@ -256,24 +248,7 @@ public class Person
 		// Must be a valid country code (the last 2 characters)
 		String countryCode = email.substring(emailLength - 2);
 		countryCode = countryCode.toLowerCase();
-		// How am I supposed to do this?
+
 		return (Arrays.stream(VALID_EMAIL_COUNTRY_CODES).anyMatch(countryCode::equals));
 	}
-	
-	
-	public static void main(String[] args)
-	{
-		Person p = new Person();
-		
-		p.setName("andreas moen");
-		//p.setEmail("john.doe@ntnu.aa");
-		p.setEmail("andreas.moen@ntnu.no");
-		
-		
-		
-	}
-	
-	
-	
-	
 }
