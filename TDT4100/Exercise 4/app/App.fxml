@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.UIManager">
+	<VBox fx:id="mainContainer" prefHeight="800.0" prefWidth="640.0">
+      <VBox alignment="TOP_CENTER" prefHeight="52.0" prefWidth="640.0" translateY="10.0">
+         <children>
+   			<Text fx:id="goldText" fill="#ab0606" text="Rubles: 0">
+               <font>
+                  <Font name="Manjari Bold" size="40.0" />
+               </font>
+            </Text>
+   			<Text fx:id="goldPerSecText" fill="#4b12c6" text="Per Second: 0">
+               <font>
+                  <Font name="Manjari Bold" size="24.0" />
+               </font>
+            </Text>
+         			<Text fx:id="goldPerClickText" fill="#4b12c6" text="Per Click: 1">
+               <font>
+                  <Font name="Manjari Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <HBox maxHeight="400.0" maxWidth="640.0" minHeight="300.0" minWidth="640.0" prefHeight="400.0" prefWidth="640.0" translateY="40.0">
+         <children>
+            <VBox maxHeight="400.0" minHeight="400.0" prefHeight="400.0" prefWidth="319.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Automated Upgrades" textAlignment="CENTER" underline="true" wrappingWidth="320.7294921875">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <VBox layoutX="10.0" layoutY="140.0" maxHeight="10.0" maxWidth="200.0" minHeight="10.0" minWidth="200.0" prefHeight="10.0" prefWidth="200.0" />
+                  <VBox maxHeight="115.0" maxWidth="240.0" minHeight="115.0" minWidth="240.0" prefHeight="115.0" prefWidth="240.0" style="-fx-border-color: black; -fx-background-color: #2510c0; -fx-border-radius: 20; -fx-background-radius: 20; -fx-opacity: 1;" translateX="40.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Chechnyan Farmers" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#c8c8c8" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Hire&quot; people from Chechnya to farm potatoes" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <HBox maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonus" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="chechnyanFarmersBox" layoutX="11.0" layoutY="68.0" maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="999" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+10" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Button alignment="CENTER" minWidth="240.0" mnemonicParsing="false" onAction="#clickChechnyanFarmers" prefHeight="29.0" prefWidth="240.0" style="-fx-background-color: transparent;" text="BUY" textAlignment="CENTER" textFill="WHITE" translateY="-5.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" maxHeight="5.0" maxWidth="200.0" minHeight="5.0" minWidth="200.0" prefHeight="5.0" prefWidth="200.0" translateX="40.0" />
+                  <VBox layoutX="10.0" layoutY="10.0" maxHeight="115.0" maxWidth="240.0" minHeight="115.0" minWidth="240.0" prefHeight="115.0" prefWidth="240.0" style="-fx-border-color: black; -fx-background-color: #2510c0; -fx-border-radius: 20; -fx-background-radius: 20;" translateX="40.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Babushka workers" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#c8c8c8" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our country is full of babushkas, let's put them to work!" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <HBox maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonus" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="babushkaWorkersBox" maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="999" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+10" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Button alignment="CENTER" minWidth="240.0" mnemonicParsing="false" onAction="#clickBabushkaWorkers" prefHeight="144.0" prefWidth="238.0" style="-fx-background-color: transparent;" text="BUY" textAlignment="CENTER" textFill="WHITE" translateY="-5.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="110.0" maxHeight="5.0" maxWidth="200.0" minHeight="5.0" minWidth="200.0" prefHeight="5.0" prefWidth="200.0" translateX="40.0" />
+                  <VBox layoutX="10.0" layoutY="110.0" maxHeight="115.0" maxWidth="240.0" minHeight="115.0" minWidth="240.0" prefHeight="115.0" prefWidth="240.0" style="-fx-border-color: black; -fx-background-color: #2510c0; -fx-border-radius: 20; -fx-background-radius: 20;" translateX="40.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Praise Communism" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#c8c8c8" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Slavsia, Otechestvo nashe svobodnoe" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <HBox maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonus" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="praiseCommunismBox" maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="999" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+10" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Button alignment="CENTER" minWidth="240.0" mnemonicParsing="false" onAction="#clickPraiseCommunism" prefHeight="144.0" prefWidth="238.0" style="-fx-background-color: transparent;" text="BUY" textAlignment="CENTER" textFill="WHITE" translateY="-5.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="230.0" maxHeight="5.0" maxWidth="200.0" minHeight="5.0" minWidth="200.0" prefHeight="5.0" prefWidth="200.0" translateX="40.0" />
+                  <VBox layoutX="10.0" layoutY="210.0" maxHeight="115.0" maxWidth="240.0" minHeight="115.0" minWidth="240.0" prefHeight="115.0" prefWidth="240.0" style="-fx-border-color: black; -fx-background-color: #2510c0; -fx-border-radius: 20; -fx-background-radius: 20;" translateX="40.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Siberian Factory" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#c8c8c8" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make labour camp workers contribute to the common good" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <HBox maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonus" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="siberianFactoryBox" maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="999" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+10" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Button alignment="CENTER" minWidth="240.0" mnemonicParsing="false" onAction="#clickSiberianFactory" prefHeight="144.0" prefWidth="238.0" style="-fx-background-color: transparent;" text="BUY" textAlignment="CENTER" textFill="WHITE" translateY="-5.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children></VBox>
+            <VBox layoutX="10.0" layoutY="10.0" maxHeight="400.0" minHeight="400.0" prefHeight="400.0" prefWidth="319.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Click Upgrades" textAlignment="CENTER" underline="true" wrappingWidth="320.7294921875">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <VBox layoutX="10.0" layoutY="140.0" maxHeight="10.0" maxWidth="200.0" minHeight="10.0" minWidth="200.0" prefHeight="10.0" prefWidth="200.0" />
+                  <VBox maxHeight="115.0" maxWidth="240.0" minHeight="115.0" minWidth="240.0" prefHeight="115.0" prefWidth="240.0" style="-fx-border-color: black; -fx-background-color: #2510c0; -fx-background-radius: 20; -fx-border-radius: 20;" translateX="40.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="GMO Potatoes" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#c8c8c8" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genetically modify potatoes increase vodka yield per potato" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <HBox maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonus" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="gmoPotatoesBox" maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="999" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+10" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Button alignment="CENTER" minWidth="240.0" mnemonicParsing="false" onAction="#clickGmoPotatoes" prefHeight="144.0" prefWidth="238.0" style="-fx-background-color: transparent;" text="BUY" textAlignment="CENTER" textFill="WHITE" translateY="-5.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox maxHeight="5.0" maxWidth="200.0" minHeight="5.0" minWidth="200.0" prefHeight="5.0" prefWidth="200.0" translateX="40.0" />
+                  <VBox layoutX="10.0" layoutY="10.0" maxHeight="115.0" maxWidth="240.0" minHeight="115.0" minWidth="240.0" prefHeight="115.0" prefWidth="240.0" style="-fx-border-color: black; -fx-background-color: #2510c0; -fx-background-radius: 20; -fx-border-radius: 20;" translateX="40.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Diluted Vodka" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#c8c8c8" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nobody will notice, right? More vodka per potato!" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <HBox maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonus" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="dilutedVodkaBox" maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="999" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+10" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Button alignment="CENTER" minWidth="240.0" mnemonicParsing="false" onAction="#clickDilutedVodka" prefHeight="144.0" prefWidth="238.0" style="-fx-background-color: transparent;" text="BUY" textAlignment="CENTER" textFill="WHITE" translateY="-5.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="110.0" maxHeight="5.0" maxWidth="200.0" minHeight="5.0" minWidth="200.0" prefHeight="5.0" prefWidth="200.0" translateX="40.0" />
+                  <VBox layoutX="10.0" layoutY="110.0" maxHeight="115.0" maxWidth="240.0" minHeight="115.0" minWidth="240.0" prefHeight="115.0" prefWidth="240.0" style="-fx-border-color: black; -fx-background-color: #2510c0; -fx-background-radius: 20; -fx-border-radius: 20;" translateX="40.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="KGB Agents" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#c8c8c8" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hire KGB Agents to... &quot;remove&quot; our competitors" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <HBox maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonus" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="kgbAgentsBox" maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="999" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+10" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Button alignment="CENTER" minWidth="240.0" mnemonicParsing="false" onAction="#clickKgbAgents" prefHeight="144.0" prefWidth="238.0" style="-fx-background-color: transparent;" text="BUY" textAlignment="CENTER" textFill="WHITE" translateY="-5.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="220.0" maxHeight="5.0" maxWidth="200.0" minHeight="5.0" minWidth="200.0" prefHeight="5.0" prefWidth="200.0" translateX="40.0" />
+                  <VBox layoutX="10.0" layoutY="210.0" maxHeight="115.0" maxWidth="240.0" minHeight="115.0" minWidth="240.0" prefHeight="115.0" prefWidth="240.0" style="-fx-border-color: black; -fx-background-color: #2510c0; -fx-background-radius: 20; -fx-border-radius: 20;" translateX="40.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Bribe Putin" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#c8c8c8" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I give you swimming pool, you give me lower taxes!" textAlignment="CENTER" wrappingWidth="240.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <HBox maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonus" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="bribePutinBox" maxWidth="240.0" minWidth="240.0" prefHeight="100.0" prefWidth="240.0">
+                           <children>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" strokeType="OUTSIDE" strokeWidth="0.0" text="999" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#c8c8c8" layoutX="90.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+10" textAlignment="CENTER" wrappingWidth="80.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Button alignment="CENTER" minWidth="240.0" mnemonicParsing="false" onAction="#clickBribePutin" prefHeight="144.0" prefWidth="238.0" style="-fx-background-color: transparent;" text="BUY" textAlignment="CENTER" textFill="WHITE" translateY="-5.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+		<VBox fx:id="potatoDiv" maxHeight="1.0" minHeight="1.0" prefHeight="1.0" prefWidth="640.0">
+	      	<ImageView fx:id="potatoImgView" fitHeight="400.0" fitWidth="640.0" layoutX="300.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+				<image>
+				
+				</image>
+			</ImageView>
+				
+               	<Button fx:id="potatoButton" alignment="CENTER" maxWidth="640.0" minWidth="640.0" onAction="#click" prefHeight="400.0" prefWidth="640.0" />	
+		</VBox>
+	</VBox>
+   <ImageView fx:id="vodkaImgView" fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" />
+</AnchorPane>
